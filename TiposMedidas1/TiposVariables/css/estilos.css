@@ -1,0 +1,36 @@
+
+/*ejemplo de weight con dos tipografías*/
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* ejemplo con width y weight desde google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Georama:wdth,wght@63..150,100..900&display=swap');
+
+
+h2 { font-family: 'Georama', sans-serif;
+
+font-variation-settings: 'wdth' 65 ,'wght' 900;}
+/*ejemplo de tipografía variable a través de un archivo con @font-face*/
+@font-face {
+    font-family: miFuente;
+    src: url(../fuentes/fuenteVariable.ttf);
+    font-weight: 200 900;
+    font-stretch: 50 200;
+}
+
+h1 { font-family: miFuente; 
+    /*
+    font-weight: 900;
+    font-stretch: ; */
+
+     font-variation-settings: 'wdth' 200 , 'wght' 900;}
+
+
+  p { font-family: 'Recursive', sans-serif; font-weight: 1000;}  
+  
+  p + p { font-family:'Space Grotesk', sans-serif;font-weight: 700; }
+
+
+
+
+
+

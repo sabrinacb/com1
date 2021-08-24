@@ -1,0 +1,44 @@
+
+
+
+
+
+
+/*elemento padre , cambio el valor de tamaño de tipo y vemos que se modifica proporcionalmente en este caso el h1*/
+body { font-size: 10px; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2em;}
+header { background-color: lightblue; padding: 2em; width: 20em;}
+main { background-color: pink;}
+
+/* rem es por root*/
+
+
+/* 1em == tipografía base, 
+
+2em == doble de la tipografía base */
+
+@media (max-width: 768px){
+
+  body { font-size: 70%;}
+
+
+
+}
+
+
+@media (max-width: 500px){
+
+    body { font-size: 50%;}
+  
+  
+  
+  }
+
+
+
+
+
+
+
+
