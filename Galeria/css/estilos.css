@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+* { box-sizing: border-box;}
+body { font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+}
+
+h1 { font-variation-settings: 'wght' 200 ;
+    font-size: 3em;
+    animation: miTipografia 10s alternate  infinite ;
+ }
+
+@keyframes miTipografia {
+
+0% { font-variation-settings: 'wght' 200 ; }
+20% { font-variation-settings: 'wght' 400 ; }
+40% { font-variation-settings: 'wght' 600 ; }
+80% { font-variation-settings: 'wght' 800 ; }
+100% {  font-variation-settings: 'wght' 900 ;} 
+
+
+    
+}
+
+
+
+
+main { width: 100%; padding: 1em; }
+
+.fila { 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: auto; 
+    width: 90%;
+    justify-content: center;
+}
+/*
+flex-wrap: nowrap => siempre encolumna aunque no haya espacio
+
+
+
+*/
+.columna { width: 25%; padding: 1em;}
+/* 12 columnas 
+col-12 => 100%
+
+*/
+img { width: 100%;
+    margin-bottom:2em;
+
+  /* filter: grayscale(100%); */
+   filter: sepia(100%); 
+  /*filter: invert(100%);*/
+  /*opacity: 0.5; esto es lo mismo que debajo*/
+ /* filter: opacity(50%)*/
+ box-shadow: 2px 2px 4px red;
+ /*filter: drop-shadow(-6px -6px 10px #666 );*/
+
+ border-radius: 10px / 20px; 
+ transition: opacity 5s;
+
+
+}
+
+img:hover { opacity: 0.5;
+           cursor: pointer;
+
+}
+/*
+
+.columna:first-child { background-color: red;}
+.columna:nth-child(2) { background-color: green;}
+.columna:nth-child(3) { background-color: lightblue;}
+
+*/
+/* display
+none => esconder
+block => elemento bloque (h1, p, div, section, etc.)
+inline => no toman width, no toman height, y se ubican uno al lado del otro (a, strong, mark, em, etc.)
+inline-block => img, video, iframe (se comportan igual que los elementos de linea , pero toman width y height) */ 
+
+
+
+@media (max-width: 992px){
+
+.columna { width: 50%;}
+/* .col-6*/
+
+}
+
+
+@media (max-width: 768px){
+.columna { width: 100%;}
+/* .col-12*/
+
+
+
+}
