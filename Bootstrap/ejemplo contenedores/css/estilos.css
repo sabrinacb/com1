@@ -1,0 +1,13 @@
+.container-fluid { background-color: red;}
+
+.container { background-color: green;}
+
+.container-sm { background-color: pink;}
+
+.container-md { background-color: yellow;}
+
+.container-lg { background-color: lightgreen;}
+
+.container-xl { background-color: coral;}
+
+.container-xxl { background-color: black; color: white;}
