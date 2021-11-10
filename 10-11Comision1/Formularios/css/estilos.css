@@ -1,0 +1,29 @@
+form {
+    width: 400px;
+  
+    background-color: lightblue;
+    border-radius: 2px;
+    box-shadow: 2px  3px rgba(0,0,0,0.5);
+}
+
+textarea { resize: none;}
+/*esto es para no poder modificar el tamaño del textarae*/
+
+input, textarea {
+    width: 200px;
+    transition: width 10s;
+    outline: none;
+    border:none;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*input son elementos de linea-bloque
+inline-block*/
+
+input:focus, textarea:focus {
+
+    width: 300px;
+}
+
+label { display: block;}

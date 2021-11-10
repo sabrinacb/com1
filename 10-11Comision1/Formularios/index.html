@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <form method="post" action="php/codigo.php">
+
+        <label for="nombre">Nombre </label>
+        <input id="nombre" required type="text" placeholder="Juan Perez"> <span> *</span>
+
+        <label for="email">E-mail </label>
+        <input id="email" required  type="email" placeholder="info@mimail.com"> <span> *</span>
+
+
+        <label for="edad">Edad (Mínimo 18, Máximo 100)</label>
+        <input id="edad" min="18"  max="100" required  type="number"> <span> *</span>
+
+        <label for="comentarios">Comentarios</label>
+      <textarea id="comentarios"></textarea>
+      
+      
+        <span> *</span>
+
+
+
+<!-- puedo fijar un step
+        <label for="edad">Entradas</label>
+        <input id="edad" min="1" step="3"  max="10" required  type="number"> <span> *</span>
+
+    -->
+
+<br>
+<input type="submit">
+<!--el submit actúa igual que el <button> </button>-->
+<input type="reset">
+
+
+    </form>
+
+    <!--
+
+
+GET => -NO SEGURO, LA INFORMACIÓN SE ADJUNTA COMO APÉNDICE DE LA URL
+       -LÍMITE EN CANTIDAD INFORMACIÓN
+       -FORMULARIO BÚSQUEDA
+POST => -SEGURO, LA INFORMACIÓN VA DENTRO DEL MISMO FORMULARIO
+        -NO TIENE LÍMITES EN CANTIDAD DE CARÁCTERES
+        -PERMITE ADJUNTAR ARCHIVOS
+
+
+-->
+
+
+
+
+</body>
+
+</html>
