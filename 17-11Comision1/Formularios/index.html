@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<form action="codigo.php" method="post">
+
+   <label for="nombre" required >Nombre</label>
+   <input name="nombre" placeholder="Juan Perez" type="text" id="nombre">  
+   <label for="email">Emails</label>
+   <input name="emails" multiple type="email" id="email" placeholder="info1@mail.com,info2@mail.com"> 
+   
+   <label>Deportes</label>
+   <label><input type="checkbox" name="deportes" value="natacion">Natación </label>
+  <label> <input type="checkbox" name="deportes" value="futbol">Fútbol
+  </label>
+   <label>  <input value="deportes" type="checkbox" name="deportes"> Gimnasia
+ </label>
+
+ <label for="telefono">Telefono - Formato: +99(99)9999-9999</label>
+
+ <input name="telefono" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" id="telefono" type="tel">
+
+ <label>Estado Civil</label>
+ <label>Casado <input value="casado" type="radio" name="estado"></label>
+<label >Soltero  <input value="soltero" type="radio" name="estado"></label>
+<label >Divorciado
+ <input type="radio" value="divorciado" name="estado"></label>
+ <label>Nacionalidad</label>
+ <select name="nacionalidad">
+<option value="">Elegir...</option>
+<option value="argentina" >Argentina</option>
+<option value="brasil">Brasil</option>
+<option value="uruguay">Uruguay</option>
+
+ </select>
+
+ <label>Preferencias</label>
+<select name="preferencias" multiple>
+
+<option value="historia">Historia</option>
+<option value="cienciaFiccion">Ciencia Ficción</option>
+<option value="novela">Novela</option>
+
+
+</select>
+
+<label for="color">Elegir Color...</label>
+ <input name="color" type="color">
+
+   <button>Enviar</button>
+
+</form>
+
+    
+</body>
+</html>
